@@ -36,8 +36,18 @@ const Timer = () => {
                 if(sec > 0) {
                    return sec-1;
                 } else {
-                    setMins(m =>m-1);
-                    setSecs(60);
+                    
+                    setMins(m => {
+                        if( m <1) {
+                            clearInterval(timer.current);
+                            
+                            return m;
+                        } else {
+                            return  m-1;
+                        }
+                    });
+                    
+                   setSecs(60);
                 }
             });
         

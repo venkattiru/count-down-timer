@@ -1,0 +1,10 @@
+.btn-grp {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.timer-display {
+  text-align: center;
+  padding: 20px;
+}
